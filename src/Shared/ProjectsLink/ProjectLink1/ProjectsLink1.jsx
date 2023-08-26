@@ -9,7 +9,9 @@ const ProjectsLink1 = () => {
     return (
         <ul className='projectLink text-designColor'>
             <li className=''>
-                <Link to='https://github.com/Hridhyapaul/eSpeak-Summer-camp-client' className='text-icon'>
+                <Link to='https://github.com/Hridhyapaul/travel-agency-client'
+                    target='_blank'
+                    className='text-icon'>
                     <span className=''>
                         <TbBrandGithub className='icon'></TbBrandGithub>
                     </span>
@@ -18,7 +20,9 @@ const ProjectsLink1 = () => {
                 </Link>
             </li>
             <li className=''>
-                <Link to='https://github.com/Hridhyapaul/eSpeak-Summer-camp-server' className='text-icon'>
+                <Link to='https://github.com/Hridhyapaul/travel-agency-server'
+                    target='_blank'
+                    className='text-icon'>
                     <span className=''>
                         <FaGithub className='icon'></FaGithub>
                     </span>
@@ -27,7 +31,9 @@ const ProjectsLink1 = () => {
                 </Link>
             </li>
             <li className=''>
-                <Link to='https://gilded-cucurucho-0c3153.netlify.app/' className='text-icon'>
+                <Link to='https://zippy-chebakia-a74396.netlify.app/'
+                    target='_blank'
+                    className='text-icon'>
                     <span className=''>
                         <RxOpenInNewWindow className='icon'></RxOpenInNewWindow>
                     </span>
