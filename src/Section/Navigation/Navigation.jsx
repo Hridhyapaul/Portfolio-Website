@@ -22,6 +22,7 @@ const Navigation = () => {
             duration: 500,
         });
         setMenuOpen(false);
+        setActiveSection(to);
     };
 
     useEffect(() => {
@@ -29,6 +30,8 @@ const Navigation = () => {
             duration: 1000, // Duration of the animation
         });
     }, []);
+
+    const [activeSection, setActiveSection] = useState("home")
 
     return (
         <div className="lg:mt-5 ">
@@ -49,9 +52,10 @@ const Navigation = () => {
                             smooth={true}
                             offset={-70}
                             duration={500}
+                            onSetActive={() => setActiveSection("home")}
                         >
                             <li>
-                                <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">Home</motion.a>
+                                <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }} className={`hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign ${activeSection === "home" ? 'hoverDesign active' : 'hoverDesign'}`}>Home</motion.a>
                             </li>
                         </Link>
                         <Link
@@ -61,12 +65,13 @@ const Navigation = () => {
                             smooth={true}
                             offset={-70}
                             duration={500}
+                            onSetActive={() => setActiveSection("about")}
                         >
                             <li>
-                                <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">About</motion.a>
+                                <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className={`hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign ${activeSection === "about" ? 'hoverDesign active' : 'hoverDesign'}`}>About</motion.a>
                             </li>
                         </Link>
-                        <Link
+                        {/* <Link
                             activeClass="active"
                             to="experience"
                             spy={true}
@@ -77,7 +82,7 @@ const Navigation = () => {
                         >
                             <li><motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">Experience</motion.a>
                             </li>
-                        </Link>
+                        </Link> */}
                         <Link
                             activeClass="active"
                             to="projects"
@@ -85,8 +90,9 @@ const Navigation = () => {
                             smooth={true}
                             offset={-70}
                             duration={500}
+                            onSetActive={() => setActiveSection("projects")}
                         >
-                            <li><motion.a initial={{ y: -10, opacity: 0 }} animate={{ y2: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.4 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">Projects</motion.a>
+                            <li><motion.a initial={{ y: -10, opacity: 0 }} animate={{ y2: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.4 }} className={`hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign ${activeSection === "projects" ? 'hoverDesign active' : 'hoverDesign'}`}>Projects</motion.a>
                             </li>
                         </Link>
                         <Link
@@ -97,9 +103,10 @@ const Navigation = () => {
                             offset={-70}
                             duration={500}
                             scrolling="true"
+                            onSetActive={() => setActiveSection("skill")}
                         >
                             <li>
-                                <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y2: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">Skills</motion.a>
+                                <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y2: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }} className={`hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign ${activeSection === "skill" ? 'hoverDesign active' : 'hoverDesign'}`}>Skills</motion.a>
                             </li>
                         </Link>
                         <Link
@@ -109,8 +116,9 @@ const Navigation = () => {
                             smooth={true}
                             offset={-70}
                             duration={500}
+                            onSetActive={() => setActiveSection("contact")}
                         >
-                            <li><motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">Contact</motion.a>
+                            <li><motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.6 }} className={`hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign ${activeSection === "contact" ? 'hoverDesign active' : 'hoverDesign'}`}>Contact</motion.a>
                             </li>
                         </Link>
                     </ul>
@@ -153,7 +161,7 @@ const Navigation = () => {
                                     <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">About</motion.a>
                                 </li>
                             </Link>
-                            <Link
+                            {/* <Link
                                 activeClass="active"
                                 to="experience"
                                 spy={true}
@@ -164,7 +172,7 @@ const Navigation = () => {
                             >
                                 <li><motion.a initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.8 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">Experience</motion.a>
                                 </li>
-                            </Link>
+                            </Link> */}
                             <Link
                                 activeClass="active"
                                 to="projects"
@@ -187,7 +195,7 @@ const Navigation = () => {
 
                             >
                                 <li>
-                                    <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y2: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.4 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign">Skills</motion.a>
+                                    <motion.a initial={{ y: -10, opacity: 0 }} animate={{ y2: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.4 }} className="hover:tracking-widest cursor-pointer hover:text-designColor duration-300 relative hoverDesign ">Skills</motion.a>
                                 </li>
                             </Link>
                             <Link

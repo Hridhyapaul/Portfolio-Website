@@ -1,4 +1,4 @@
-.hoverDesign::after{
+.hoverDesign::after {
     content: '';
     height: 3px;
     width: 100%;
@@ -13,7 +13,12 @@
     pointer-events: none;
 }
 
-.hoverDesign:hover::after{
+.hoverDesign:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.hoverDesign.active::after {
     opacity: 1;
     transform: scale(1, 1);
 }
