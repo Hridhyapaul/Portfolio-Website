@@ -1,0 +1,51 @@
+.otherProjectLink {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.otherProjectLink li .text-icon {
+    /* border: 2px solid #19A7CE; */
+    background-color: #19A7CE;
+    /* padding: 4px 10px; */
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* transition: 0.5s; */
+    margin-right: 8px;
+}
+
+/* ---------------- */
+
+/* Basic styling for the tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Styling for the tooltip text */
+  .tooltiptext {
+    visibility: hidden;
+    font-size: 12px;
+    width: 80px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Show the tooltip text on hover */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
