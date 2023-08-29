@@ -17,20 +17,20 @@ const Banner = () => {
 
     const handleDownloadResume = () => {
         // Replace the file URL with the actual URL of your resume file
-        const resumeUrl = '../../../public/resume.pdf';
+        const resumeUrl = '../../../Hridhya_Paul_Resume.pdf';
 
         const link = document.createElement('a');
         link.href = resumeUrl;
-        link.download = 'resume.pdf';
+        link.download = 'Hridhya_Paul_Resume.pdf';
         link.click();
     };
 
     return (
         <Container>
             <div id='home'>
-                {/* <div className='lg:block hidden'>
-                <FollowSocialLink></FollowSocialLink>
-            </div> */}
+                <div className='lg:block hidden'>
+                    <FollowSocialLink></FollowSocialLink>
+                </div>
                 <div className='lg:pl-56 bg-bgColor'>
                     {/* Large Screen */}
                     <div className='lg:block hidden'>
@@ -69,24 +69,26 @@ const Banner = () => {
                     <div className='lg:hidden block pt-20'>
                         <div className='pb-10'>
                             <div className='flex flex-col-reverse items-center justify-between w-full gap-16'>
-                                <div className='text-white font-body'>
-                                    <h1 className='text-[20px] font-body text-lightText'>Hey, This is</h1>
-                                    <h1 className='text-[40px] font-semibold text-designColor'>Hridhya Paul</h1>
-                                    <h1 className='text-[25px] font-semibold text-lightText'>a <span>{text}</span>
-                                        <Cursor
-                                            cursorColor='#19A7CE'
-                                            cursorBlinking='true'
-                                        />
-                                    </h1>
-                                    <h1 className='text-lightText font-body mt-3'>
-                                        a passionate front-end developer specializing in React.js. I bring creativity, attention to detail, and a strong problem-solving mindset to every project.
-                                    </h1>
+                                <div className='text-white text-center font-body'>
+                                    <div>
+                                        <h1 className='text-[20px] font-body text-lightText'>Hey, This is</h1>
+                                        <h1 className='text-[40px] font-semibold text-designColor'>Hridhya Paul</h1>
+                                        <h1 className='text-[25px] font-semibold text-lightText'>a <span>{text}</span>
+                                            <Cursor
+                                                cursorColor='#19A7CE'
+                                                cursorBlinking='true'
+                                            />
+                                        </h1>
+                                        <h1 className='text-lightText font-body mt-3 mx-8'>
+                                            a passionate front-end developer specializing in React.js. I bring creativity, attention to detail, and a strong problem-solving mindset to every project.
+                                        </h1>
+                                    </div>
 
-                                    <div className='mt-3'>
+                                    <div className='mt-3 flex justify-between'>
                                         <FollowSocialLink></FollowSocialLink>
                                     </div>
 
-                                    <div className='flex items-center gap-6'>
+                                    <div className='flex justify-center items-center gap-6'>
                                         <button className='btn1 flex items-center gap-2'><FaDownload></FaDownload> Download Resume</button>
                                     </div>
                                 </div>

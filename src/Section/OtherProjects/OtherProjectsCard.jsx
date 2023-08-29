@@ -53,7 +53,7 @@ const OtherProjectsCard = ({ project }) => {
                 <button onClick={() => setIsModalOpen(true)} className='btn1 mt-4'>Preview</button>
 
                 {isModalOpen && (
-                    <div className='fixed inset-0 flex items-center lg:justify-center z-50 py-20' >
+                    <div className='fixed inset-0 flex items-center lg:justify-center lg:left-0 left-4 lg:right-0 right-4 z-50 py-20' >
                         <div className='modal-overlay fixed inset-0 bg-lightText opacity-50'></div>
                         <div className='lg:modal-container bg-bodyColor lg:w-[70%] w-screen rounded shadow-lg z-50' data-aos="zoom-in-down">
                             <div className='bg-designColor text-bodyColor px-4 py-4 flex justify-between items-center'>

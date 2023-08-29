@@ -12,7 +12,7 @@ const FollowSocialLink = () => {
         });
     }, []);
     return (
-        <div className="lg:fixed z-10 py-5 w-screen bg-bgColor lg:pl-56 mr-10" data-aos="fade-down">
+        <div className="lg:fixed z-10 py-5 flex justify-center w-screen bg-bgColor lg:pl-56" data-aos="fade-down">
             <motion.div
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

@@ -4,7 +4,7 @@ import { HiXCircle } from 'react-icons/hi';
 const Modal3 = ({setIsModalOpen}) => {
     const technologies = ["HTML", "CSS", "Tailwind CSS", "React.js", "React Router", "React Hook", "Firebase", "Node.js", "Express.js", "MongoDB"]
     return (
-        <div className="fixed z-20 inset-0 flex items-center justify-center py-32">
+        <div className="fixed z-20 inset-0 flex items-center lg:justify-center py-32">
             <div className='modal-overlay fixed inset-0 bg-black opacity-30'></div>
             <div className='lg:modal-container bg-bodyColor lg:w-[70%] w-screen rounded shadow-lg z-50' data-aos="zoom-in-down">
                 <div className='bg-designColor text-bodyColor pl-12 pr-4 py-4 flex justify-between items-center'>
