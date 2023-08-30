@@ -132,7 +132,7 @@ const Navigation = () => {
                     </div>
                 </div>
 
-                <div className={`w-screen lg:hidden absolute h-fit bg-bodyColor transition-all duration-500 ${isMenuOpen ? 'top-[81px] right-0 left-0 transition-all duration-500 object-left opacity-100' : 'top-[81px] opacity-0'}`}>
+                <div className={`w-full lg:hidden absolute h-fit bg-bodyColor transition-all duration-500 ${isMenuOpen ? 'top-[81px] right-0 left-0 transition-all duration-500 object-left opacity-100' : 'top-[81px] opacity-0'}`}>
                     <div>
                         <ul className="space-x-2 text-center text-lightText my-10 font-body lg:hidden block">
                             <Link
