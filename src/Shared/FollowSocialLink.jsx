@@ -22,7 +22,7 @@ const FollowSocialLink = () => {
                 <span className="lg:block hidden h-[2px] w-[12px] bg-lightText ml-2"></span>
                 <ul className='socialDiv text-bgColor'>
                     <li className=''>
-                        <Link to='https://www.linkedin.com/in/hridhya-paul-38099a114/'>
+                        <Link target="_blank" to='https://www.linkedin.com/in/hridhya-paul-38099a114/'>
                             <span className=''>
                                 <FaLinkedinIn className='icon'></FaLinkedinIn>
                             </span>
@@ -31,7 +31,7 @@ const FollowSocialLink = () => {
                         </Link>
                     </li>
                     <li className=''>
-                        <Link to='https://twitter.com/HridhyaPaul2'>
+                        <Link target="_blank" to='https://twitter.com/HridhyaPaul2'>
                             <span className=''>
                                 <FaTwitter className='icon'></FaTwitter>
                             </span>
@@ -40,7 +40,7 @@ const FollowSocialLink = () => {
                         </Link>
                     </li>
                     <li className=''>
-                        <Link to='https://github.com/Hridhyapaul'>
+                        <Link target="_blank" to='https://github.com/Hridhyapaul'>
                             <span className=''>
                                 <FaGithub className='icon'></FaGithub>
                             </span>
@@ -49,7 +49,7 @@ const FollowSocialLink = () => {
                         </Link>
                     </li>
                     <li className=''>
-                        <Link to='https://t.me/Hridhyapaul'>
+                        <Link target="_blank" to='https://t.me/Hridhyapaul'>
                             <span className=''>
                                 <FaTelegramPlane className='icon'></FaTelegramPlane>
                             </span>
@@ -58,7 +58,7 @@ const FollowSocialLink = () => {
                         </Link>
                     </li>
                     <li className=''>
-                        <Link to='https://wa.me/01834526418'>
+                        <Link target="_blank" to='https://wa.me/01834526418'>
                             <span className=''>
                                 <FaWhatsapp className='icon'></FaWhatsapp>
                             </span>
