@@ -3,6 +3,7 @@ import smart from "../../../assets/Images/Smart-Shoe-Store.jpg";
 // import ProjectsLink3 from "../../../Shared/ProjectsLink/ProjectLink3/ProjectLink3";
 import { useState } from "react";
 import Modal4 from "./Modal4";
+import ProjectLink4 from "../../../Shared/ProjectsLink/ProjectLink4/ProjectLink4";
 
 const Project4 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,16 +36,16 @@ const Project4 = () => {
             </div>
             <div className="border-2 border-lightText px-5 py-5 rounded-lg">
               <p className="text-lightText">
-                KidsZone, a captivating and interactive e-commerce platform
-                tailored exclusively for children. This portfolio project is a
-                testament to my prowess in web development, harnessing
-                technologies like Tailwind CSS, React.js, React Router,
-                Firebase, Express.js, and MongoDB to curate a seamless user
-                journey
+                The Smart Shoe Store website is a dynamic e-commerce platform
+                designed to provide an engaging and efficient shopping
+                experience for footwear enthusiasts. This project showcases my
+                expertise in web development, user experience design, state
+                management, content management, image hosting, API testing, and
+                online payment integration.
               </p>
             </div>
             <div className="flex justify-end">
-              {/* <ProjectsLink3></ProjectsLink3> */}
+              <ProjectLink4></ProjectLink4>
             </div>
           </div>
 
@@ -78,17 +79,17 @@ const Project4 = () => {
                 </h3>
               </div>
               <div className="flex justify-center mt-2">
-                {/* <ProjectsLink3></ProjectsLink3> */}
+                <ProjectLink4></ProjectLink4>
               </div>
             </div>
             <div className="border-2 border-lightText px-5 py-5 rounded-lg">
               <p className="text-lightText">
-                KidsZone, a captivating and interactive e-commerce platform
-                tailored exclusively for children. This portfolio project is a
-                testament to my prowess in web development, harnessing
-                technologies like Tailwind CSS, React.js, React Router,
-                Firebase, Express.js, and MongoDB to curate a seamless user
-                journey.
+                The Smart Shoe Store website is a dynamic e-commerce platform
+                designed to provide an engaging and efficient shopping
+                experience for footwear enthusiasts. This project showcases my
+                expertise in web development, user experience design, state
+                management, content management, image hosting, API testing, and
+                online payment integration.
               </p>
             </div>
             <div>
