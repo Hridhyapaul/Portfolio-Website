@@ -1,8 +1,8 @@
 import React from "react";
 import smart from "../../../assets/Images/Smart-Shoe-Store.jpg";
 // import ProjectsLink3 from "../../../Shared/ProjectsLink/ProjectLink3/ProjectLink3";
-// import Modal3 from "./Modal3";
 import { useState } from "react";
+import Modal4 from "./Modal4";
 
 const Project4 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,13 +23,13 @@ const Project4 = () => {
                   Features & Technologies
                 </button>
                 <h3 className="text-lightText font-semibold text-2xl">
-                  KidsZone
+                  Smart Shoe Store
                 </h3>
 
                 {/* Modal */}
 
                 {isModalOpen && (
-                  <Modal3 setIsModalOpen={setIsModalOpen}></Modal3>
+                  <Modal4 setIsModalOpen={setIsModalOpen}></Modal4>
                 )}
               </div>
             </div>
@@ -101,7 +101,7 @@ const Project4 = () => {
 
               {/* Modal */}
 
-              {/* {isModalOpen && <Modal3 setIsModalOpen={setIsModalOpen}></Modal3>} */}
+              {isModalOpen && <Modal4 setIsModalOpen={setIsModalOpen}></Modal4>}
             </div>
           </div>
         </div>

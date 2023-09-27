@@ -14,7 +14,7 @@ const Project3 = () => {
             <div className='lg:block hidden'>
                 <div className='w-full py-[24px] px-[28px] rounded-md flex justify-center items-center gap-10 shadow-shadowOne' >
                     <div className='w-[45%] bg-bodyColor'>
-                        <img className='w-full h-[300px] rounded-md object-cover object-top hover:object-bottom duration-[10s]' src={kidzZone} alt="" />
+                        <img className='w-full h-[300px] rounded-md object-cover object-top hover:object-bottom duration-[10s] cursor-pointer' src={kidzZone} alt="" />
                     </div>
                     <div className='w-[55%] font-body text-right space-y-4'>
                         <div>
